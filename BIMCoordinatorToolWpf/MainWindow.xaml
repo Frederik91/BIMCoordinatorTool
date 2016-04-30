@@ -1,0 +1,18 @@
+﻿<Window x:Class="BIMCoordinatorToolWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIMCoordinatorToolWpf"
+        xmlns:ViewModel="clr-namespace:BIMCoordinatorToolWpf.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <ComboBox Text="Select Project" SelectedValue="{Binding SelectedProject}"/>
+            <Button Content="Add Project" Command="{Binding AddProjectCommand}"/>
+            <Button Content="Remove Project" Command="{Binding RemoveProjectCommand}"/>
+            <Button Content="Send update" Command="{Binding SendUpdateCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
